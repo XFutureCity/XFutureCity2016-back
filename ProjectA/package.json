@@ -1,0 +1,26 @@
+{
+  "name": "xfuturecity2016-back-projecta",
+  "version": "1.0.0",
+  "description": "Back-end services for XFutureCity",
+  "main": "main.js",
+  "scripts": {
+    "start": "./node_modules/gulp/bin/gulp.js build-for-web && node ./bin/www",
+    "test": "./node_modules/gulp/bin/gulp.js launch-tests",
+    "cover": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec build/test/ && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XFutureCity/XFutureCity2016-back.git"
+  },
+  "keywords": [
+    "xebia",
+    "cisco",
+    "hackathon"
+  ],
+  "author": "Simone Civetta",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/XFutureCity/XFutureCity2016-back/issues"
+  },
+  "homepage": "https://github.com/XFutureCity/XFutureCity2016-back#readme"
+}
